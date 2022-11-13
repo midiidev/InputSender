@@ -7,7 +7,9 @@ const port = 3000
 app.use(bodyParser.urlencoded({ extended: false }))
 
 app.use((req, res, next) => {
-    console.debug(`recieved request from ${req.ip} on ${req.path} (${req.method})`)
+    console.debug(
+        `recieved request from ${req.ip} on ${req.path} (${req.method})`
+    )
     next()
 })
 

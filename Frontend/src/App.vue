@@ -19,10 +19,7 @@ const customKey = ref('')
                 <div>
                     <label class="block text-sm"
                         >Host
-                        <a
-                            :href="`http://${url}`"
-                            class="underline"
-                            v-if="url"
+                        <a :href="`http://${url}`" class="underline" v-if="url"
                             >({{ url }})</a
                         ></label
                     >
@@ -55,13 +52,13 @@ const customKey = ref('')
                     <label class="text-sm">Send custom key</label>
                     <div class="flex">
                         <input class="x-input" v-model="customKey" />
-                        <button class="x-btn" @click="sendKey(customKey)">></button>
+                        <button class="x-btn" @click="sendKey(customKey)">
+                            >
+                        </button>
                     </div>
                 </div>
 
-                <div>
-
-                </div>
+                <div></div>
             </div>
         </div>
     </div>
