@@ -13,8 +13,8 @@ const customKey = ref('')
         <div class="rounded-xl bg-gradient-to-br from-indigo-500 to-green-500">
             <div class="rounded-xl bg-black m-[1px] p-10 space-y-5">
                 <div>
-                    <h1 class="text-3xl font-semibold">SendInput</h1>
-                    <p class="text-lg">send inputs to the host's machine</p>
+                    <h1 class="text-3xl font-semibold">InputSender</h1>
+                    <p class="text-lg">send inputs to your friend's machine</p>
                 </div>
                 <div>
                     <label class="block text-sm"
