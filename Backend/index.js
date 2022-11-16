@@ -1,4 +1,6 @@
 const express = require('express')
+const fs = require('fs')
+const https = require('https')
 const bodyParser = require('body-parser')
 const ks = require('node-key-sender')
 const app = express()
@@ -27,6 +29,12 @@ app.post('/send-text', (req, res) => {
     res.json('success')
 })
 
-app.listen(port, () => {
-    console.log(`Listening on port ${port}`)
+https.createServer(
+    {
+        key: fs.readFileSync('server.key'),
+        cert: fs.readFileSync('server.cert')
+    },
+    app
+).listen(port, () => {
+    console.log(`Listening on https on port ${port}`)
 })

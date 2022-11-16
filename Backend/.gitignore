@@ -1,2 +1,4 @@
 node_modules/
 *.log
+server.cert
+server.key
