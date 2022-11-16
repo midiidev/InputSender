@@ -8,8 +8,9 @@ This is Vue. Not fake HTML.
 ## Setup
 
 1. Port forward `3000` with `TCP`
-2. Run the express app located in `Backend/`
-3. Send your IP to your friend (be careful with this)
+2. Generate a certificate for https from within the `Backend/` folder (`openssl req -nodes -new -x509 -keyout server.key -out server.cert`)
+3. Run the express app located in `Backend/`
+4. Send your IP to your friend (be careful with this)
 
 ## Usage
 
@@ -23,4 +24,5 @@ i have put way too much effort into this readme
 
 - Java is required. I'm not sure what version, so make sure you have a relatively recent version installed, I guess. This was tested with OpenJDK 19, but any version in the last 4 years should probably work.
 - Node.js is obviously required. I also don't know which version so try to make sure it's up to date, I guess.
+- installer openssl to create certificate if you don't have it installed already
 - i am losing my sanity
