@@ -19,7 +19,7 @@ const customKey = ref('')
                 <div>
                     <label class="block text-sm"
                         >Host
-                        <a :href="`http://${url}`" class="underline" v-if="url"
+                        <a :href="`https://${url}`" class="underline" v-if="url"
                             >({{ url }})</a
                         ></label
                     >
