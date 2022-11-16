@@ -25,4 +25,6 @@ i have put way too much effort into this readme
 - Java is required. I'm not sure what version, so make sure you have a relatively recent version installed, I guess. This was tested with OpenJDK 19, but any version in the last 4 years should probably work.
 - Node.js is obviously required. I also don't know which version so try to make sure it's up to date, I guess.
 - installer openssl to create certificate if you don't have it installed already
+- Try opening the ip:port in a new tab and accept the security risk if requests aren't being sent. Browsers don't like self-signed certs, unfortunately.
+- The server ONLY runs on https, so make sure you're attempting to connect to it from https if you're unable to connect   
 - i am losing my sanity
