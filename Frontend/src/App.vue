@@ -30,14 +30,21 @@ const customKey = ref('')
                     />
                 </div>
 
-                <div class="space-x-2">
-                    <button class="x-btn" @click="sendKey('w')">W</button>
-                    <button class="x-btn" @click="sendKey('a')">A</button>
-                    <button class="x-btn" @click="sendKey('s')">S</button>
-                    <button class="x-btn" @click="sendKey('d')">D</button>
-                    <button class="x-btn" @click="sendKey('space')">
+                <div class="space-x-2 flex justify-between">
+                    <button class="x-btn x-btn-wide" @click="sendKey('w')">W</button>
+                    <button class="x-btn x-btn-wide" @click="sendKey('a')">A</button>
+                    <button class="x-btn x-btn-wide" @click="sendKey('s')">S</button>
+                    <button class="x-btn x-btn-wide" @click="sendKey('d')">D</button>
+                    <button class="x-btn x-btn-wide" @click="sendKey('space')">
                         SPACE
                     </button>
+                </div>
+
+                <div class="space-x-2 flex justify-between">
+                    <button class="x-btn x-btn-wide" @click="sendKey('left')">←</button>
+                    <button class="x-btn x-btn-wide" @click="sendKey('up')">↑</button>
+                    <button class="x-btn x-btn-wide" @click="sendKey('down')">↓</button>
+                    <button class="x-btn x-btn-wide" @click="sendKey('right')">→</button>
                 </div>
 
                 <div>
