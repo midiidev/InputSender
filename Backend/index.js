@@ -19,12 +19,12 @@ app.get('/', (req, res) => {
 
 app.post('/send-key', (req, res) => {
     ks.sendKey(req.body.key)
-    res.send('success')
+    res.json('success')
 })
 
 app.post('/send-text', (req, res) => {
     ks.sendText(req.body.text)
-    res.send('success')
+    res.json('success')
 })
 
 app.listen(port, () => {
