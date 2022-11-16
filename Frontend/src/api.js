@@ -3,10 +3,9 @@ import { ref } from 'vue'
 export const url = ref('localhost:3000')
 
 export const sendKey = async (key) => {
-    const res = await fetch(`https://${url.value}/send-key`, {
+    const res = await fetch(`http://${url.value}/send-key`, {
         method: 'POST',
         mode: 'no-cors',
-        credentials: 'same-origin',
         headers: {
             'Content-Type': 'application/x-www-form-urlencoded'
         },
@@ -17,10 +16,9 @@ export const sendKey = async (key) => {
 }
 
 export const sendText = async (text) => {
-    const res = await fetch(`https://${url.value}/send-text`, {
+    const res = await fetch(`http://${url.value}/send-text`, {
         method: 'POST',
         mode: 'no-cors',
-        credentials: 'same-origin',
         headers: {
             'Content-Type': 'application/x-www-form-urlencoded'
         },
